@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    background:rgba(15,23,42,0.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+    min-height:100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+      url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover;
+    display:flex;
+    align-items:center;
+    padding:100px 60px;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:14px 26px;
+    font-size:16px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#0ea5e9;
+}
+
+/* SECTION COMMON */
+section{
+    padding:100px 60px;
+}
+
+section h2{
+    font-size:38px;
+    text-align:center;
+    margin-bottom:50px;
+}
