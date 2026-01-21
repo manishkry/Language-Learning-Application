@@ -14,7 +14,7 @@ body{
     color:white;
 }
 
-/* NAVBAR */
+
 nav{
     position:fixed;
     top:0;
@@ -43,7 +43,7 @@ nav a:hover{
     color:#38bdf8;
 }
 
-/* HERO SECTION */
+
 .hero{
     min-height:100vh;
     background:
@@ -83,7 +83,7 @@ nav a:hover{
     background:#0ea5e9;
 }
 
-/* SECTION COMMON */
+
 section{
     padding:100px 60px;
 }
@@ -94,7 +94,7 @@ section h2{
     margin-bottom:50px;
 }
 
-/* FEATURES */
+
 .features{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -113,7 +113,7 @@ section h2{
     margin-bottom:15px;
 }
 
-/* FLASHCARDS */
+
 .flashcard-box{
     max-width:500px;
     margin:auto;
@@ -142,7 +142,7 @@ section h2{
     cursor:pointer;
 }
 
-/* QUIZ */
+
 .quiz-box{
     max-width:500px;
     margin:auto;
@@ -167,7 +167,7 @@ section h2{
     cursor:pointer;
 }
 
-/* PROGRESS */
+
 .progress-box{
     background:#020617;
     padding:80px 20px;
@@ -183,10 +183,121 @@ section h2{
     font-size:20px;
 }
 
-/* FOOTER */
+
 footer{
     background:#020617;
     padding:30px;
     text-align:center;
     font-size:14px;
+}
+@media (max-width: 992px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+    .hero {
+        padding: 120px 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 80px 40px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav h2 {
+        margin-bottom: 10px;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px 12px;
+    }
+
+
+    .hero {
+        padding: 120px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+
+    .flashcard-box,
+    .quiz-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .flashcard-box h3 {
+        font-size: 26px;
+    }
+
+
+    .progress-box h3 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .flashcard-box button,
+    .quiz-box button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
